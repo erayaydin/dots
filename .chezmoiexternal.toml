@@ -1,0 +1,4 @@
+[".local/etc/nvim"]
+    type = "git-repo"
+    url = "https://github.com/erayaydin/NVimArtisan.git"
+    refreshPeriod = "168h"
