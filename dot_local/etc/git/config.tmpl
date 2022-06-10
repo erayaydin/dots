@@ -1,0 +1,16 @@
+[user]
+	name = Eray Aydın
+	email = erayaydinn@protonmail.com
+[credential]
+{{- if eq .chezmoi.os "darwin" }}
+	helper = osxkeychain
+{{- else if eq .chezmoi.os "linux" }}
+	helper = libsecret
+{{- else if eq .chezmoi.os "windows" }}
+	helper = manager-core
+{{- end }}
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
