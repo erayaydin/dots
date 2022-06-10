@@ -1,0 +1,33 @@
+# Path to oh-my-zsh installation
+ZSH="$XDG_DATA_HOME/oh-my-zsh/"
+
+# Oh My Zsh theme
+ZSH_THEME="agnoster"
+
+# Plugins
+plugins=(
+	git
+	pass
+)
+
+# Shell interactive configuration
+. $XDG_CONFIG_HOME/sh/interactive
+
+# Comp dump
+[ -d "$XDG_CACHE_HOME/zsh" ] || mkdir -p "$XDG_CACHE_HOME/zsh"
+autoload -Uz compinit
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump"
+
+# History
+mkdir -p "$XDG_STATE_HOME/zsh"
+export HISTFILE="$XDG_STATE_HOME/zsh/history"
+
+# Oh-My-Zsh
+source $ZSH/oh-my-zsh.sh
+
+# SDKMAN Initialize
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+# NVM Initialize
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
+

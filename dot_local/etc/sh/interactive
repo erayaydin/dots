@@ -1,0 +1,12 @@
+# Interactive shell configuration
+
+# Load snippets in interactive.d
+if [ -d "$XDG_CONFIG_HOME/sh/interactive.d" ]; then
+	for snippet in "$XDG_CONFIG_HOME/sh/interactive.d/"*.sh; do
+		if [ -r "$snippet" ]; then
+			. "$snippet"
+		fi
+	done
+	unset snippet
+fi
+

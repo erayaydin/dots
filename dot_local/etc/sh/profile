@@ -1,0 +1,24 @@
+# Path helper function
+path() {
+	test -d "$2" || return
+
+	# Append or prepend path
+	case ":$PATH:" in
+		(*:"$2":*)
+			;;
+		(*)
+			case "$1" in
+				(prepend) PATH="$2:$PATH" ;;
+				(append) PATH="$PATH:$2" ;;
+			esac
+	esac
+}
+
+# Load profiles in `profile.d` directory.
+for profile in "$XDG_CONFIG_HOME/sh/profile.d/"*.sh; do
+	if [ -r "$profile" ]; then
+		. "$profile"
+	fi
+done
+unset profile
+

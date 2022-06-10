@@ -1,0 +1,9 @@
+# Load environments in `environment.d` directory.
+for environment in "$XDG_CONFIG_HOME/sh/environment.d/*.sh"; do
+	if [ -r "$environment" ]; then
+		echo "Execution $environment ...\n";
+		. "$environment"
+	fi
+done
+unset environment
+

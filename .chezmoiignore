@@ -1,0 +1,4 @@
+{{- if ne .chezmoi.os "darwin" }}
+.local/etc/sh/profile.d/90-homebrew.sh
+{{- end }}
+
