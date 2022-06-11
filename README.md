@@ -191,8 +191,7 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 
 [Back to top 🔝](#)
 
-<div align="center">
-**Please ⭐️ or ⭐️ this repository :)**
+<div align="center"><b>Please ⭐️this repository :)</b>
 </div>
 
 [badge-codefactor]:https://img.shields.io/codefactor/grade/github/erayaydin/dots?logo=codefactor&logoColor=white&cacheSeconds=300
