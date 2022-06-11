@@ -12,14 +12,14 @@ ZSH_THEME="agnoster"
 plugins=(
 	git
 	pass
-    zsh-autosuggestions
-    zsh-syntax-highlighting
     jsontools
     gitignore
     docker
     composer
 {{ if eq .chezmoi.os "linux" }}
     archlinux
+    zsh-autosuggestions
+    zsh-syntax-highlighting
 {{ end }}
 )
 
