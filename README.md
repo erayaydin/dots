@@ -22,172 +22,55 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 
 ## Toolset 🛠️
 
-### Shells
-
-- [Zsh](http://zsh.sourceforge.net) :penguin: :apple: : [`~/.local/etc/zsh/.zshrc`](./dot_local/etc/zsh/dot_zshrc.tmpl)
-
-### Terminal Emulators
-
-- [Kitty]() :penguin: :apple: : [`~/.local/etc/kitty`](./dot_local/etc/kitty/)
-
-### Package Managers
-
-- [Pacman]() :penguin: : [`~/.local/etc/pacman`](./dot_local/etc/pacman/)
-- [Homebrew](https://brew.sh) :apple:
-- [Scoop](https://scoop.sh) 🪟
-
-### Window Managers
-
-- [i3wm]() :penguin: : [`~/.local/etc/i3`](./dot_local/etc/i3/)
-- [yabai]() :apple:
-
-### Panel
-
-- [polybar]() :penguin: : [`~/.local/etc/polybar`](./dot_local/etc/polybar/)
-
-### Text Editors
-
-- [Neovim]() :penguin: :apple: 🪟: [`~/.local/etc/nvim`](./dot_local/etc/nvim/)
-
-### File Managers
-
-- [Ranger]() :penguin: :apple: 🪟
-
-### E-Mail Clients
-
-- [Neomutt]() :penguin: :apple: 🪟
-
-### Mail Indexer
-
-- [notmuch]() :penguin:
-
-### Mail Retriever
-
-- [fetchmail]() :penguin:
-
-### IRC Clients
-
-- [irssi]() :penguin: :apple:
-
-### Browsers
-
-- [qutebrowser]() :penguin: :apple: : [`~/.local/etc/qutebrowser`](./dot_local/etc/private_qutebrowser/)
-- [vieb]() :penguin: :apple: : [`~/.local/etc/vieb`](./dot_local/etc/vieb/)
-
-### Video Player
-
-- [mpv]() :penguin:
-
-### Disc Usage Analyzer
-
-- [Ncurses Disk Usage]() :penguin:
-
-### Process/System Monitor
-
-- [bottom]() :penguin:
-
-### Torrent Clients
-
-- [transmission]() :penguin:
-
-### Image Viewer
-
-- [Feh]() :penguin:
-
-### Background Setter
-
-- [Feh]() :penguin:
-
-### HTTP Clients
-
-- [Httpie]() :penguin:
-
-### IM Clients
-
-- [Finch]() :penguin:
-
-### Music Servers
-
-- [Mpd]() :penguin:
-
-### Music Daemons
-
-- [mopidy]() :penguin:
-
-### Music Clients
-
-- [ncmpcpp]() :penguin:
-
-### VPN Clients
-
-- [Wireguard]() :penguin:
-- [OpenVPN]() :penguin:
-
-### Microblogging Clients
-
-- [toot]() :penguin: :apple:
-
-### Screenshot
-
-- [maim]() :penguin:
-
-### Terminal Multiplexers
-
-- [tmux]() :penguin: :apple:
-
-### File Sync & Backup
-
-- [rsync]() :penguin: :apple:
-- [duplicity]() :penguin:
-
-### Unpacking Tool
-
-- [atool]() :penguin:
-
-### Finder
-
-- [fd]() :penguin:
-
-### Hex Editors
-
-- [Bless]() :penguin:
-
-### JSON Toolset
-
-- [jq]() :penguin: :apple:
-
-### UML Modeler
-
-- [PlantUML]() :penguin: :apple:
-
-### Disk Cleaning
-
-- [fdupes]() :penguin:
-
-### Office Suit
-
-- [LibreOffice]() :penguin: :apple:
-
-### Network Monitors
-
-- [vnStat]() :penguin:
-
-### Graph Visualizer
-
-- [GraphViz]() :penguin:
-
-### Task Managers
-
-- [TaskWarrior]() :penguin:
-
-### Application Launchers
-
-- [macOS Spotlight]() :apple:
-- [rofi]() :penguin:
-
-### Pastebin Services
-
-- [ix.io](https://ix.io) :globe_with_meridians:
+| **Category**               | **Application** | **GNU/Linux**      | **macOS**          | **Windows**        | **License**        | **Configuration**                                                 |
+|----------------------------|-----------------|--------------------|--------------------|--------------------|--------------------|-------------------------------------------------------------------|
+| **Shell**                  | Zsh             | :white_check_mark: | :white_check_mark: |                    | MIT-Modern-Variant | [`~/.local/etc/zsh`](./dot_local/etc/zsh)                         |
+| **Terminal Emulator**      | Kitty           | :white_check_mark: | :white_check_mark: |                    | GPLv3              | [`~/.local/etc/kitty`](./dot_local/etc/kitty)                     |
+| **Package Manager**        | Pacman          | :white_check_mark: |                    |                    |                    | [`~/.local/etc/pacman`](./dot_local/etc/pacman)                   |
+| **Package Manager**        | Homebrew        |                    | :white_check_mark: |                    |                    |                                                                   |
+| **Package Manager**        | Scoop           |                    |                    | :white_check_mark: |                    |                                                                   |
+| **Window Manager**         | i3wm            | :white_check_mark: |                    |                    |                    | [`~/.local/etc/i3`](./dot_local/etc/i3)                           |
+| **Window Manager**         | yabai           |                    | :white_check_mark: |                    |                    | [`~/.local/etc/yabai`](./dot_local/etc/yabai)                     |
+| **Panel**                  | polybar         | :white_check_mark: |                    |                    |                    | [`~/.local/etc/polybar`](./dot_local/etc/polybar)                 |
+| **Text Editor**            | Neovim          | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | [`~/.local/etc/nvim`](./dot_local/etc/nvim)                       |
+| **File Manager**           | ranger          | :white_check_mark: | :white_check_mark: |                    |                    | [`~/.local/etc/ranger`](./dot_local/etc/ranger)                   |
+| **E-Mail Client**          | Neomutt         | :white_check_mark: | :white_check_mark: |                    |                    |                                                                   |
+| **Mail Indexer**           | notmuch         | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Mail Retriever**         | fetchmail       | :white_check_mark: |                    |                    |                    |                                                                   |
+| **IRC Client**             | irssi           | :white_check_mark: | :white_check_mark: |                    |                    |                                                                   |
+| **Browser**                | qutebrowser     | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | [`~/.local/etc/qutebrowser`](./dot_local/etc/private_qutebrowser) |
+| **Browser**                | vieb            | :white_check_mark: | :white_check_mark: |                    |                    | [`~/.local/etc/vieb`](./dot_local/etc/vieb)                       |
+| **Video Player**           | mpv             | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Disc Usage Analyzer**    | ncdu            | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Process/System Monitor** | bottom          | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Torrent Clients**        | transmission    | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |                                                                   |
+| **Image Viewer**           | feh             | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Background Setter**      | feh             | :white_check_mark: |                    |                    |                    |                                                                   |
+| **HTTP Client**            | httpie          | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |                                                                   |
+| **IM Client**              | finch           | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Music Server**           | mpd             | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Music Daemon**           | mopidy          | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Music Client**           | ncmpcpp         | :white_check_mark: |                    |                    |                    |                                                                   |
+| **VPN Client**             | Wireguard       | :white_check_mark: |                    |                    |                    |                                                                   |
+| **VPN Client**             | OpenVPN         | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |                                                                   |
+| **Microblogging Client**   | toot            | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Screenshot**             | maim            | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Terminal Multiplexer**   | tmux            | :white_check_mark: | :white_check_mark: |                    |                    |                                                                   |
+| **File Sync**              | rsync           | :white_check_mark: | :white_check_mark: |                    |                    |                                                                   |
+| **Backup**                 | duplicity       | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Unpacking Tool**         | atool           | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Finder**                 | fd              | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Hex Editor**             | Bless           | :white_check_mark: |                    |                    |                    |                                                                   |
+| **JSON Tool**              | jq              | :white_check_mark: | :white_check_mark: |                    |                    |                                                                   |
+| **UML Modeler**            | PlantUML        | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Disk Cleaning**          | fdupes          | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Office Suit**            | LibreOffice     | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Network Monitor**        | vnStat          | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Graph Visualizer**       | GraphViz        | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Task Manager**           | TaskWarrior     | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Application Launcher**   | macOS Spotlight |                    | :white_check_mark: |                    |                    |                                                                   |
+| **Application Launcher**   | rofi            | :white_check_mark: |                    |                    |                    |                                                                   |
+| **Pastebin Service**       | ix.io           | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |                                                                   |
 
 [Back to top 🔝](#)
 
