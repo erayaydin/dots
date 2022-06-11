@@ -1,10 +1,10 @@
 # Text editors, pagers, etc.
 
-{{ if eq .chezmoi.os "darwin" }}
+{{ if eq .chezmoi.os "darwin" }}
 export EDITOR="/opt/homebrew/bin/nvim"
 export VISUAL="/opt/homebrew/bin/nvim"
 {{ else }}
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
-{{ end }}
+{{ end }}
 export PAGER="/usr/bin/less"
