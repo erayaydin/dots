@@ -1,5 +1,9 @@
 # Path to oh-my-zsh installation
+{{ if eq .chezmoi.os "darwin" }}
 ZSH="$XDG_DATA_HOME/oh-my-zsh/"
+{{ else }}
+ZSH="/usr/share/oh-my-zsh/"
+{{ end }}
 
 # Oh My Zsh theme
 ZSH_THEME="agnoster"
