@@ -1,10 +1,13 @@
 <div align="center">
+
 # @erayaydin's Dotfiles
+
 managed by [chezmoi](https://chezmoi.io) 🏠
 
 [![CodeFactor Rating][badge-codefactor]][link-codefactor]
 [![Latest Commit][badge-commit]][link-commit]
 [![License][badge-license]][link-license]
+
 </div>
 
 ## Personal Goals
@@ -15,7 +18,11 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 - Human readable configuration for every app.
 - Extendible theme and config support. (See `polybar` configuration)
 
-<p align="right">[Back to top 🔝](#)</p>
+<p align="right">
+
+[Back to top 🔝](#)
+
+</p>
 
 ## Toolset 🛠️
 
