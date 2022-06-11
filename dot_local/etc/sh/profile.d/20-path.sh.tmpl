@@ -6,5 +6,7 @@ path prepend "$HOME/.local/bin"
 # Add path to wrapper scripts:
 path prepend "$XDG_LIB_HOME/wrappers"
 
+{{ if eq .chezmoi.os "darwin" }}
 # Add coursier path
 path prepend "$HOME/Library/Application Support/Coursier/bin"
+{{ end }}

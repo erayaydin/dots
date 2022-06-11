@@ -10,7 +10,11 @@ alias cp='cp -i'
 alias grep='grep --color=auto'
 alias ip='ip --color=auto'
 alias ll='ls -lh --time-style=long-iso'
+{{ if eq .chezmoi.os "darwin" }}
+alias ls='ls -A --color=auto --quoting-style=literal'
+{{ else }}
 alias ls='ls -A --color=auto'
+{{ end }}
 alias lt='ll -t'
 alias mv='mv -i'
 
@@ -19,8 +23,15 @@ alias sudo='sudo '
 alias watch='watch '
 
 # XDG workarounds
+{{ if eq .chezmoi.os "linux" }}
+alias startx='startx "$XDG_CONFIG_HOME/X11/xinitrc"'
+{{ end }}
 alias tmux='tmux -f "$XDG_CONFIG_HOME/tmux/tmux.conf"'
 alias sbt='sbt -ivy "$XDG_DATA_HOME"/ivy2 -sbt-dir "$XDG_DATA_HOME"/sbt'
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+# Laravel Sail
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 # Personal aliases:
 alias todo='grep -n -R "TODO\|FIXME\|XXX" .'
