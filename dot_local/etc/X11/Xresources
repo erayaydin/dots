@@ -1,0 +1,44 @@
+! X resources file.
+
+! Colour palette:
+#define black        #222222
+#define red          #E06655
+#define green        #11BB11
+#define yellow       #BDBD00
+#define blue         #3889CA
+#define magenta      #CC00CC
+#define cyan         #00D0C0
+#define white        #EEEEEE
+#define lightblack   #555555
+#define lightred     #FF5555
+#define lightgreen   #55FF55
+#define lightyellow  #FFFF55
+#define lightblue    #44AAD7
+#define lightmagenta #FF55FF
+#define lightcyan    #55FFFF
+#define lightwhite   #FFFFFF
+
+#define termfg       #BBBBBB
+#define termbg       #111111
+
+*color0              : black
+*color8              : lightblack
+*color1              : red
+*color9              : lightred
+*color2              : green
+*color10             : lightgreen
+*color3              : yellow
+*color11             : lightyellow
+*color4              : blue
+*color12             : lightblue
+*color5              : magenta
+*color13             : lightmagenta
+*color6              : cyan
+*color14             : lightcyan
+*color7              : white
+*color15             : lightwhite
+
+Xcursor.theme: Nordzy-cursors
+
+! Application-specific configuration:
+
