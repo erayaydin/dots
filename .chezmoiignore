@@ -1,4 +1,14 @@
 {{- if ne .chezmoi.os "darwin" }}
 .local/etc/sh/profile.d/90-homebrew.sh
 {{- end }}
-
+{{- if ne .chezmoi.os "linux" }}
+.local/etc/dunst
+.local/etc/gtk-3.0
+.local/etc/i3
+.local/etc/pacman
+.local/etc/picom
+.local/etc/polybar
+.local/etc/rofi
+.local/etc/systemd
+.local/etc/X11
+{{- end }}
