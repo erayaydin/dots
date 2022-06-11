@@ -1,0 +1,90 @@
+""" Options
+
+" Update adblock blacklist
+set adblocker=update
+
+" Enable Firefox pretend agent mode
+set firefoxmode=always
+
+" Devtools should open in split mode
+set devtoolsposition=split
+
+" Set fontsize for vieb UI
+set fontsize=12
+
+" Ask when downloading
+set downloadmethod=confirm
+
+" Ask confirmation
+set permissioncamera=ask
+set permissiondisplaycapture=ask
+set permissionmediadevices=ask
+set permissionmicrophone=ask
+set permissionpersistentstorage=ask
+
+" Focus right tab when closing current tab
+set tabclosefocusright
+
+" Use nvim
+set vimcommand="kitty -- nvim"
+
+" Minimum tabwidth before overflow (Usefull for buffer usage)
+set mintabwidth=250
+
+" Open restored tabs in same index
+set tabreopenposition=previous
+
+" Search engine
+set search=https://duckduckgo.com/?q=%s&kae=d&kav=1&k1=-1&kaj=m&kak=-1&kax=-1&kaq=-1&kap=-1&kao=-1&kau=-1&k5=-1
+
+" Smart Search
+set searchwords=wiki~https://wikipedia.org/w/index.php?title=Special:Search&search=%s,yt~https://youtube.com/results?search_query=%s,apkg~https://archlinux.org/packages/?q=%s,awiki~https://wiki.archlinux.org/index.php?search=%s&title=Special%3ASearch&profile=default&fulltext=1,aurpkg~https://aur.archlinux.org/packages/?O=0&K=%s
+
+""" Mappings
+
+nmap i <toInsertMode>
+nmap v <p.start><p.startVisualSelect>
+nmap gi <insertAtFirstInput>
+nmap f <startFollowCurrentTab>
+nmap F <startFollowNewTab>
+nmap / <toSearchMode>
+nmap n <nextSearchMatch>
+nmap N <previousSearchMatch>
+nmap gg <scrollTop>
+nmap G <scrollBottom>
+nmap d <scrollPageDownHalf>
+nmap u <scrollPageUpHalf>
+nmap p <openFromClipboard>
+nmap P <openNewTab><openFromClipboard>
+nmap gu <toParentUrl>
+nmap gU <toRootUrl>
+nmap yf <p.start><startFollowCurrentTab>
+nunmap [
+nunmap ]
+nmap [[ <previousPage>
+nmap ]] <nextPage]
+nmap v <p.start><p.startVisualSelect>
+nmap o <toExploreMode>
+nmap O <openNewTab><toExploreMode>
+nmap T <toCommandMode>buffer<Space>
+nmap g0 <:buffer
+nmap g$ <:buffer
+nmap J <previousTab>
+nmap K <nextTab>
+nmap ^ <toLastUsedTab>
+nmap ge <toExploreMode><End>
+nmap gE <openNewTab><toExploreMode>
+nmap x <:close>
+nmap X <reopenTab>
+nmap H <backInHistory>
+nmap L <forwardInHistory>
+nmap <A-p> <:pin>
+nmap <A-m> <:mute>
+nmap t <openNewTab>
+nmap yt <openNewTabWithCurrentUrl><CR>
+nmap <lt><lt> <moveTabBackward>
+nmap >> <moveTabForward>
+nmap ? <:help>
+nmap <C-e> <editWithVim>
+
+emap <C-e> <editWithVim>
