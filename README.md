@@ -104,7 +104,7 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 
 ### IM Clients
 
-- [Finch]() :finch:
+- [Finch]() :penguin:
 
 ### Music Servers
 
