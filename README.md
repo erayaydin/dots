@@ -18,7 +18,7 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 - Human readable configuration for every app.
 - Extendible theme and config support. (See `polybar` configuration)
 
-<p align="right"> [Back to top 🔝](#) </p>
+[Back to top 🔝](#)
 
 ## Toolset 🛠️
 
@@ -189,7 +189,7 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 
 - [ix.io](https://ix.io) :globe_with_meridians:
 
-<p align="right">[Back to top 🔝](#)</p>
+[Back to top 🔝](#)
 
 <div align="center">
 **Please ⭐️ or ⭐️ this repository :)**
