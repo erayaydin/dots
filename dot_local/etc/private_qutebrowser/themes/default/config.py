@@ -75,7 +75,7 @@ c.colors.contextmenu.disabled.fg = fg_disabled
 c.colors.contextmenu.menu.bg = bg_default
 
 # Foreground color of the context menu. If set to null, the Qt default is used.
-c.colors.contextmenu.menu.fg =  fg_default
+c.colors.contextmenu.menu.fg = fg_default
 
 # Background color of the context menu’s selected item. If set to null, the Qt default is used.
 c.colors.contextmenu.selected.bg = bg_selection
