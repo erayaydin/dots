@@ -44,3 +44,8 @@ source $ZSH/oh-my-zsh.sh
 # NVM Initialize
 [ command -v brew &> /dev/null ] && [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
 
+{{ if eq .chezmoi.os "darwin" }}
+if [ -f $(brew --prefix)/etc/brew-wrap ]; then
+    source $(brew --prefix)/etc/brew-wrap
+fi
+{{ end }}
