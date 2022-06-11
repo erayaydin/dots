@@ -1,9 +1,9 @@
 # Path to oh-my-zsh installation
-{{ if eq .chezmoi.os "darwin" }}
+{{ if eq .chezmoi.os "darwin" }}
 ZSH="$XDG_DATA_HOME/oh-my-zsh/"
 {{ else }}
 ZSH="/usr/share/oh-my-zsh/"
-{{ end }}
+{{ end }}
 
 # Oh My Zsh theme
 ZSH_THEME="agnoster"
@@ -12,6 +12,15 @@ ZSH_THEME="agnoster"
 plugins=(
 	git
 	pass
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    jsontools
+    gitignore
+    docker
+    composer
+{{ if eq .chezmoi.os "linux" }}
+    archlinux
+{{ end }}
 )
 
 # Shell interactive configuration
@@ -33,5 +42,5 @@ source $ZSH/oh-my-zsh.sh
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 
 # NVM Initialize
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
+[ command -v brew &> /dev/null ] && [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
 
