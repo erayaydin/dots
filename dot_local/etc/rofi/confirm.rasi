@@ -1,0 +1,24 @@
+@import "colors.rasi"
+
+* {
+	background-color: @bg;
+	text-color: @fg;
+	font: "FiraCode Nerd Font 10";
+}
+
+window {
+	width: 225px;
+	height: 50px;
+	border: 0 0 2px 0;
+	border-radius: 0;
+	border-color: @ac;
+	location: center;
+	padding: 15px;
+}
+
+entry {
+	expand: true;
+	text-color: @ac;
+
+}
+
