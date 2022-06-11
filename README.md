@@ -18,11 +18,7 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 - Human readable configuration for every app.
 - Extendible theme and config support. (See `polybar` configuration)
 
-<p align="right">
-
-[Back to top 🔝](#)
-
-</p>
+<p align="right"> [Back to top 🔝](#) </p>
 
 ## Toolset 🛠️
 
