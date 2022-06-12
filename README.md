@@ -27,7 +27,7 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 | **Shell**                  | Zsh             | :white_check_mark: | :white_check_mark: |                    | MIT-Modern-Variant | [`~/.local/etc/zsh`](./dot_local/etc/zsh)                         |
 | **Terminal Emulator**      | Kitty           | :white_check_mark: | :white_check_mark: |                    | GPLv3              | [`~/.local/etc/kitty`](./dot_local/etc/kitty)                     |
 | **Package Manager**        | Pacman          | :white_check_mark: |                    |                    |                    | [`~/.local/etc/pacman`](./dot_local/etc/pacman)                   |
-| **Package Manager**        | Homebrew        |                    | :white_check_mark: |                    |                    |                                                                   |
+| **Package Manager**        | Homebrew        |                    | :white_check_mark: |                    |                    | [`~/.local/etc/brewfile`](./dot_local/etc/brewfile)               |
 | **Package Manager**        | Scoop           |                    |                    | :white_check_mark: |                    |                                                                   |
 | **Window Manager**         | i3wm            | :white_check_mark: |                    |                    |                    | [`~/.local/etc/i3`](./dot_local/etc/i3)                           |
 | **Window Manager**         | yabai           |                    | :white_check_mark: |                    |                    | [`~/.local/etc/yabai`](./dot_local/etc/yabai)                     |
