@@ -31,6 +31,7 @@ managed by [chezmoi](https://chezmoi.io) 🏠
 | **Package Manager**        | Scoop           |                    |                    | :white_check_mark: |                    |                                                                   |
 | **Window Manager**         | i3wm            | :white_check_mark: |                    |                    |                    | [`~/.local/etc/i3`](./dot_local/etc/i3)                           |
 | **Window Manager**         | yabai           |                    | :white_check_mark: |                    |                    | [`~/.local/etc/yabai`](./dot_local/etc/yabai)                     |
+| **Keyboard Shortcut Tool** | skhd            |                    | :white_check_mark: |                    |                    | [`~/.local/etc/skhd`](./dot_local/etc/skhd)                       |
 | **Panel**                  | polybar         | :white_check_mark: |                    |                    |                    | [`~/.local/etc/polybar`](./dot_local/etc/polybar)                 |
 | **Text Editor**            | Neovim          | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | [`~/.local/etc/nvim`](./dot_local/etc/nvim)                       |
 | **File Manager**           | ranger          | :white_check_mark: | :white_check_mark: |                    |                    | [`~/.local/etc/ranger`](./dot_local/etc/ranger)                   |
