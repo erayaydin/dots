@@ -1,6 +1,6 @@
 [".local/etc/nvim"]
     type = "git-repo"
-    url = "https://github.com/erayaydin/NVimArtisan.git"
+    url = "git@github.com:erayaydin/NVimArtisan.git"
     refreshPeriod = "168h"
 [".local/etc/ranger/plugins/ranger_devicons"]
     type = "git-repo"
