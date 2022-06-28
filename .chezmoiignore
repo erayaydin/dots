@@ -3,6 +3,8 @@ README.md
 {{- if ne .chezmoi.os "darwin" }}
 .local/etc/sh/profile.d/90-homebrew.sh
 .local/etc/brewfile
+.local/etc/skhd
+.local/etc/yabai
 {{- end }}
 {{- if ne .chezmoi.os "linux" }}
 .local/etc/dunst
