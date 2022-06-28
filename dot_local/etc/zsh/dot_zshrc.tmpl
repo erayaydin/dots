@@ -38,12 +38,6 @@ export HISTFILE="$XDG_STATE_HOME/zsh/history"
 # Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
-# SDKMAN Initialize
-[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
-
-# NVM Initialize
-[ command -v brew &> /dev/null ] && [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh"
-
 {{ if eq .chezmoi.os "darwin" }}
 if [ -f $(brew --prefix)/etc/brew-wrap ]; then
     source $(brew --prefix)/etc/brew-wrap
