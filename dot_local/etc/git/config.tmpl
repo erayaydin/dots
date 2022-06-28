@@ -1,6 +1,7 @@
 [user]
     name = Eray Aydın
     email = erayaydinn@protonmail.com
+    signingKey = B74642495027825F59B521201ADCAE732A0FC5A8
 [init]
     defaultBranch = main
 [pull]
@@ -14,3 +15,5 @@
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+[commit]
+    gpgsign = true
