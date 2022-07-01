@@ -36,3 +36,6 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 # Personal aliases:
 alias todo='grep -n -R "TODO\|FIXME\|XXX" .'
 
+# SBT
+alias sbt='sbt -ivy "$XDG_DATA_HOME"/ivy2 -sbt-dir "$XDG_DATA_HOME"/sbt'
+
