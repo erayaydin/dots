@@ -38,6 +38,9 @@ export HISTFILE="$XDG_STATE_HOME/zsh/history"
 # Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
+# Unalias `cs` due to conflict with Coursier CLI
+unalias cs
+
 {{ if eq .chezmoi.os "darwin" }}
 if [ -f $(brew --prefix)/etc/brew-wrap ]; then
     source $(brew --prefix)/etc/brew-wrap
