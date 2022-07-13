@@ -21,6 +21,9 @@ config.set('content.default_encoding', 'utf-8')
 config.set('new_instance_open_target', 'tab-silent')
 config.set('editor.command', ['kitty', '-e', 'nvim', '{}'])
 
+# Dark Mode
+config.set('colors.webpage.preferred_color-scheme', 'dark')
+
 """
 Control Settings
 """
