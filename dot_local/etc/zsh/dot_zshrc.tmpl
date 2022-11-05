@@ -46,3 +46,10 @@ if [ -f $(brew --prefix)/etc/brew-wrap ]; then
     source $(brew --prefix)/etc/brew-wrap
 fi
 {{ end }}
+
+{{ if eq .chezmoi.os "linux" }}
+# Android SDK
+export ANDROID_SDK_ROOT=$HOME/Development/Android/SDK
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+{{ end }}
