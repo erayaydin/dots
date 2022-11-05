@@ -9,6 +9,9 @@ path prepend "$XDG_LIB_HOME/wrappers"
 {{ if eq .chezmoi.os "darwin" }}
 # Add coursier path
 path prepend "$HOME/Library/Application Support/Coursier/bin"
+{{ else if eq .chezmoi.os "linux" }}
+# Add coursier path
+path prepend "$XDG_DATA_HOME/coursier/bin"
 {{ end }}
 
 # Add path for npm
