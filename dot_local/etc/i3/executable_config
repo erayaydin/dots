@@ -110,6 +110,7 @@ for_window [window_role="File Operation Progress"] floating enable sticky
 for_window [window_role="Save As"] floating enable
 for_window [class="Steam"] floating enable
 for_window [instance="file_progress"] sticky enable
+for_window [class="^jetbrains-.+"][window_type=dialog] focus
 
 ## Keyboard Action Bindings
 
