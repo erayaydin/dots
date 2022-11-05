@@ -2,3 +2,4 @@
 [Default Applications]
 x-scheme-handler/https=qutebrowser.desktop
 x-scheme-handler/http=qutebrowser.desktop
+-text/html=org.qutebrowser.qutebrowser.desktop
