@@ -14,6 +14,8 @@ alias ll='ls -lh --time-style=long-iso'
 alias ls='ls -A --color=auto --quoting-style=literal'
 {{ else }}
 alias ls='ls -A --color=auto'
+alias lasterrors='journalctl -p 0..3 -b'
+alias lastservicefailed='systemctl --failed'
 {{ end }}
 alias lt='ll -t'
 alias mv='mv -i'
